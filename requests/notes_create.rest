@@ -1,7 +1,11 @@
-POST http://localhost:3001/api/notes HTTP/1.1
-content-type: application/json
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZsYXZpbyIsImlkIjoiNjgyZTIwOWU5YTBkN2NiYmI4MmRkODU1IiwiaWF0IjoxNzQ3ODYxODcxfQ.sgIpXRDeOwEaOZtL93ehz2P5olKxol0VHJ69_FGdZxs
 
-  {
-    "content": "My test",
-    "important": true
-  }
+{
+  "content": "My test",
+  "important": true
+}
+
+# #########################
+# must do a login first and get the new Bearer
